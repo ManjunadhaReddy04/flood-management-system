@@ -7,12 +7,12 @@ import { fileURLToPath } from "url";
 
 
 
-const db = new pg.Client({
-    user: "postgres",
-    host: "localhost",
-    database: "drpr",
-    password: "manjureddys1*M",
-    port: 5432,
+const db = new Client({
+  user: process.env.PGUSER,
+  host: process.env.PGHOST,
+  database: process.env.PGDATABASE,
+  password: process.env.PGPASSWORD,
+  port: process.env.PGPORT,
 });
 
 db.connect();
