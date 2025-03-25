@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Optional: Lockfile (remove this line if you want to keep package-lock.json)
+package-lock.json
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# IDE-specific files
+.vscode/
+.idea/
+.DS_Store
+
+# Build artifacts
+dist/
+build/
