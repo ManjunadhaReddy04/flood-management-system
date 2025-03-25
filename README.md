@@ -22,13 +22,17 @@ PostgreSQL (v15.x or higher)
 Steps :
 1.Clone the Repository 
   bash-> git clone https://github.com/your-username/flood-management-system.git
+  
 2.Navigate to the Project Directory
   cd flood-management-system
+  
 3.Install Dependencies 
    npm install
+   
 4.Set Up the Database :
 Create a PostgreSQL database named drpr.
 Update the database credentials in index.js:
+
 javascript
 const db = new pg.Client({
   user: "postgres", // Replace with your PostgreSQL username
@@ -37,6 +41,7 @@ const db = new pg.Client({
   password: "your_password", // Replace with your PostgreSQL password
   port: 5432,
 });
+
 5.Start the Application 
   npm start
   
